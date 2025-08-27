@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="./assests/css/style.css" />
   </head>
   <body>
-    <nav class="flex bg-white border-b border-gray-200 fixed w-full top-0 z-50">
-      <div class="flex items-center lg:w-[300px] ml-16">
+    <nav
+      id="navbar"
+      class="flex bg-white border-gray-200 fixed w-full top-0 z-50"
+    >
+      <div class="flex items-center lg:w-[300px] ml-16 py-8">
         <img
           alt="logo"
           loading="lazy"
@@ -26,45 +29,45 @@
         />
       </div>
       <div
-        class="flex items-center justify-between w-full gap-5 p-4 bg-white border-b border-gray-200 mr-12"
+        class="flex items-center justify-between w-full gap-5 p-4 bg-white mr-12"
       >
         <div>
           <ul>
             <li class="inline-block mr-6">
-              <a href="#" class="text-sm text-gray-900 hover:text-blue-600"
+              <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
                 >Home</a
               >
             </li>
             <li class="inline-block mr-6">
-              <a href="#" class="text-xl text-gray-900 hover:text-blue-600"
+              <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
                 >Features</a
               >
             </li>
             <li class="inline-block mr-6">
-              <a href="#" class="text-sm text-gray-900 hover:text-blue-600"
+              <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
                 >Blog</a
               >
             </li>
             <li class="inline-block mr-6">
-              <a href="#" class="text-sm text-gray-900 hover:text-blue-600"
+              <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
                 >Docs</a
               >
             </li>
             <li class="inline-block mr-6">
-              <a href="#" class="text-sm text-gray-900 hover:text-blue-600"
+              <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
                 >Pages</a
               >
             </li>
             <li class="inline-block mr-6">
-              <a href="#" class="text-sm text-gray-900 hover:text-blue-600"
+              <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
                 >Support</a
               >
             </li>
           </ul>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-8">
           <svg
-            class="w-[30px] h-[30px] text-gray-800"
+            class="w-[30px] h-[30px] text-gray-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -75,12 +78,12 @@
             <path
               stroke="currentColor"
               stroke-linecap="round"
-              stroke-width="2.2"
+              stroke-width="1.5"
               d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
             />
           </svg>
           <svg
-            class="w-[30px] h-[30px] text-gray-800"
+            class="w-[30px] h-[30px] text-gray-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -92,30 +95,121 @@
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="2.2"
+              stroke-width="1.5"
               d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"
             />
           </svg>
-          <button
-            type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+          <a
+            class="text-lg hover:text-primary text-gray-400"
+            href="/auth/signin"
+            >Sign In</a
           >
-            Sign In
-          </button>
-          <button
-            type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+          <a
+            class="text-white bg-blue-700 hover:bg-blue-800 rounded-full text-sm px-8 py-2.5"
+            href="/auth/signup"
+            >Sign Up</a
           >
-            Sign Up
-          </button>
         </div>
       </div>
     </nav>
-
-    <div class="pt-24">
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <!-- Banner -->
+    <div
+      class="flex flex-row gap-8 md:flex-col lg:flex-row items-center justify-between bg-gray-50 pt-42 pb-16 px-16 lg:px-24"
+    >
+      <div class="w-full lg:w-1/2 mb-16 lg:mb-0 text-left">
+        <p class="text-xl lg:text-5xl mb-6">
+          🔥 Solid - A Complete SaaS Starter Template for SaaS
+        </p>
+        <h1 class="text-5xl lg:text-5xl font-bold mb-6 pr-12">
+          Robust SaaS Boilerplate and Starter forNext.js
+        </h1>
+        <p class="text-lg text-gray-500 mb-6 pr-12">
+          Packed with all the key integrations you need for swift SaaS startup
+          launch, including - Authentication, Database, Sanity Blog, Essential
+          UI Components, Business Pages and More. Built-winth - Next.js, React
+          18 and TypeScript.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="#"
+            class="inline-block rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+            >Get Started</a
+          >
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <img
+          src="https://solid.nextjstemplates.com/images/hero/hero-light.svg"
+          alt="Banner Image"
+          class="w-full h-auto"
+        />
+      </div>
     </div>
+    <!-- partner -->
+    <section class="border-b border-gray-200 border-t bg-alabaster py-11 pl-12">
+      <div class="mx-auto px-4 md:px-8 2xl:px-0" bis_skin_checked="1">
+        <!-- Chỗ này không hiểu tại sao sm-col3 md:col6 lại không ăn -->
+        <div
+          class="grid grid-cols-6 md:grid-cols-6 items-center justify-center gap-8"
+        >
+          <a class="mx-w-full h-10 w-[98px]">
+            <img
+              src="https://solid.nextjstemplates.com/images/brand/brand-light-01.svg"
+              alt="brand"
+              class="opacity-65 transition-all duration-300 hover:opacity-100"
+            />
+          </a>
+
+          <a class="mx-w-full h-10 w-[98px]">
+            <img
+              src="https://solid.nextjstemplates.com/images/brand/brand-light-02.svg"
+              alt="brand"
+              class="opacity-65 transition-all duration-300 hover:opacity-100"
+            />
+          </a>
+          <a class="mx-w-full h-10 w-[98px]">
+            <img
+              src="https://solid.nextjstemplates.com/images/brand/brand-light-03.svg"
+              alt="brand"
+              class="opacity-65 transition-all duration-300 hover:opacity-100"
+            />
+          </a>
+          <a class="mx-w-full h-10 w-[98px]">
+            <img
+              src="https://solid.nextjstemplates.com/images/brand/brand-light-04.svg"
+              alt="brand"
+              class="opacity-65 transition-all duration-300 hover:opacity-100"
+            />
+          </a>
+          <a class="mx-w-full h-10 w-[98px]">
+            <img
+              src="https://solid.nextjstemplates.com/images/brand/brand-light-05.svg"
+              alt="brand"
+              class="opacity-65 transition-all duration-300 hover:opacity-100"
+            />
+          </a>
+          <a class="mx-w-full h-10 w-[98px]">
+            <img
+              src="https://solid.nextjstemplates.com/images/brand/brand-light-06.svg"
+              alt="brand"
+              class="opacity-65 transition-all duration-300 hover:opacity-100"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          navbar.classList.add("border-b", "border-gray-200", "shadow-md");
+        } else {
+          navbar.classList.remove("border-b", "border-gray-200", "shadow-md");
+        }
+      });
+    </script>
   </body>
 </html>
