@@ -148,7 +148,7 @@
       </div>
       <!-- partner -->
       <section class="border-b border-gray-200 border-t bg-alabaster p-16">
-        <div class="mx-auto px-4 md:px-8 2xl:px-0" bis_skin_checked="1">
+        <div class="mx-auto px-4 md:px-8 2xl:px-0">
           <!-- Chỗ này không hiểu tại sao sm-col3 md:col6 lại không ăn -->
           <div
             class="grid grid-cols-6 md:grid-cols-6 items-center justify-center gap-8"
@@ -345,7 +345,6 @@
           </div>
           <div
             class="animate_right md:w-1/2 pt-8"
-            bis_skin_checked="1"
             style="opacity: 1; transform: none"
           >
             <h4 class="font-medium uppercase text-black">
@@ -366,14 +365,13 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               ultricies lacus non fermentum ultrices. Fusce consectetur le.
             </p>
-            <div class="mt-7.5 flex items-center gap-5" bis_skin_checked="1">
+            <div class="mt-7.5 flex items-center gap-5">
               <div
                 class="flex h-15 w-15 items-center justify-center rounded-[50%] border border-gray-200"
-                bis_skin_checked="1"
               >
                 <p class="text-metatitle2 font-semibold text-black">01</p>
               </div>
-              <div class="w-3/4" bis_skin_checked="1">
+              <div class="w-3/4">
                 <h3 class="mb-0.5 text-metatitle2 text-black">
                   Mailchimp for Newsletter Emails + SMTP for Transactional
                   Emails
@@ -383,14 +381,13 @@
                 </p>
               </div>
             </div>
-            <div class="mt-7.5 flex items-center gap-5" bis_skin_checked="1">
+            <div class="mt-7.5 flex items-center gap-5">
               <div
                 class="flex h-15 w-15 items-center justify-center rounded-[50%] border border-gray-200"
-                bis_skin_checked="1"
               >
                 <p class="text-metatitle2 font-semibold text-black">02</p>
               </div>
-              <div class="w-3/4" bis_skin_checked="1">
+              <div class="w-3/4">
                 <h3 class="mb-0.5 text-metatitle2 text-black">
                   Algolia Integration for Site Search
                 </h3>
@@ -403,34 +400,47 @@
         </div>
       </section>
 
-      <section class="mt-4 px-16">
-        <div class="flex flex-col md:flex-row lg:flex-row gap-24">
+      <section class="mt-4 px-12">
+        <div class="flex flex-col md:flex-row lg:flex-row gap-24 items-center">
           <div
-            class="animate_left md:w-1/2"
-            bis_skin_checked="1"
+            class="md:w-1/2 flex flex-col gap-4 px-8"
             style="opacity: 1; transform: none"
           >
             <h4 class="font-medium uppercase text-black">
               Launch Your SaaS Fast
             </h4>
             <h2
-              class="relative mb-6 text-3xl font-bold text-black xl:text-hero"
+              class="relative mb-6 text-5xl font-bold text-black xl:text-hero"
             >
-              Packed with All Essential<span
-                class="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark"
-                >Integrations</span
-              >
+              Packed with All Essential Integrations
             </h2>
-            <p>
+            <p class="text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               ultricies lacus non fermentum ultrices. Fusce consectetur le.
             </p>
-            <div bis_skin_checked="1">
+            <div>
               <a
                 href="#"
-                class="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary"
-                ><span class="duration-300 group-hover:pr-2">Know More</span></a
-              >
+                class="group mt-6.5 inline-flex items-center gap-4 text-black hover:text-blue-500"
+                ><span class="duration-300 group-hover:pr-2">Know More</span>
+                <svg
+                  class="w-[29px] h-[29px] text-gray-800"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 14H5m14 0-4 4m4-4-4-4"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <div class="md:w-1/2">
@@ -442,7 +452,298 @@
         </div>
       </section>
 
+      <section
+        class="pt-18.5 lg:pb-10 bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-cover bg-center"
+      >
+        <div
+          class="bg-white flex flex-row shadow-[0_0_15px_rgba(0,0,0,0.2)] mx-20 items-center justify-around gap-8 px-12 rounded-md"
+        >
+          <div
+            id="tab1"
+            class="relative flex w-full cursor-pointer items-center gap-4 px-6 py-5 justify-center"
+          >
+            <div
+              class="flex h-12.5 w-12.5 items-center justify-center rounded-[50%] border border-gray-300"
+            >
+              <p class="font-medium text-black">01</p>
+            </div>
+            <div class="md:w-3/5 lg:w-auto">
+              <button class="text-md font-medium text-black xl:text-regular">
+                Clean User Interface
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="tab2"
+            class="relative flex w-full cursor-pointer items-center gap-4 px-6 py-5 justify-center"
+          >
+            <div
+              class="flex h-12.5 w-12.5 items-center justify-center rounded-[50%] border border-gray-300"
+            >
+              <p class="font-medium text-black">02</p>
+            </div>
+            <div class="md:w-3/5 lg:w-auto">
+              <button class="text-md font-medium text-black xl:text-regular">
+                Essential Business Pages
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="tab3"
+            class="relative flex w-full cursor-pointer items-center gap-4 px-6 py-5 justify-center"
+          >
+            <div
+              class="flex h-12.5 w-12.5 items-center justify-center rounded-[50%] border border-gray-300"
+            >
+              <p class="font-medium text-black">03</p>
+            </div>
+            <div class="md:w-3/5 lg:w-auto">
+              <button class="text-md font-medium text-black xl:text-regular">
+                Fully Functional Integrations
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-18 px-32">
+          <div
+            class="flex flex-col md:flex-row lg:flex-row gap-24 items-center"
+          >
+            <div class="md:w-1/2">
+              <h2
+                id="tab-content"
+                class="mb-7 text-5xl font-bold text-black xl:text-sectiontitle2"
+              >
+                Solid UI with Solid Features.
+              </h2>
+              <p class="mb-5 text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+              </p>
+              <p class="w-11/12 text-gray-500">
+                Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec
+                finibus sagittis. Nulla ligula nunc egestas ut.
+              </p>
+            </div>
+            <div class="md:w-1/2">
+              <img
+                src="https://solid.nextjstemplates.com/images/about/about-light-02.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="mx-32 relative bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-cover bg-center bg-blue-50 rounded-lg"
+      >
+        <img
+          class="w-80 h-100 absolute -left-15 -top-25 lg:left-0"
+          src="./assests/image/shape-04.png"
+          alt=""
+        />
+
+        <img
+          class="w-30 h-50 absolute -bottom-10 right-0"
+          src="./assests/image/shape-05.png"
+          alt=""
+        />
+
+        <div class="px-32 py-42">
+          <div class="flex flex-col items-center justify-center gap-6">
+            <h1 class="text-5xl font-bold">Trusted by Global Companies.</h1>
+            <p class="text-gray-500 text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor eros.<br />
+              Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+            </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-24 lg:gap-42.5">
+              <div class="text-center">
+                <h3 class="mb-2.5 text-5xl font-bold text-black">500K</h3>
+                <p class="text-lg lg:text-para2">World Wide Clients</p>
+              </div>
+              <div class="text-center" style="opacity: 1; transform: none">
+                <h3 class="mb-2.5 text-5xl font-bold text-black">1M+</h3>
+                <p class="text-lg lg:text-para2">Downloads</p>
+              </div>
+              <div class="text-center" style="opacity: 1; transform: none">
+                <h3
+                  class="mb-2.5 text-5xl font-bold text-black xl:text-sectiontitle3"
+                >
+                  865
+                </h3>
+                <p class="text-lg lg:text-para2">Winning Award</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 lg:py-25 xl:py-30">
+        <div
+          class="animationDropDown flex flex-col items-center justify-center gap-8"
+        >
+          <p
+            class="bg-gray-200 border border-gray-200 font-medium py-3 px-6 rounded-full"
+          >
+            INTEGRATIONS
+          </p>
+          <p class="text-5xl font-bold">
+            Packed with all the key <br />
+            integrations you need
+          </p>
+          <p class="text-gray-500 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor eros.<br />
+            Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap justify-around gap-y-10 mt-12 bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-cover bg-center"
+        >
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div
+              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
+            >
+              <img
+                alt="Brand"
+                loading="lazy"
+                width="50"
+                height="50"
+                decoding="async"
+                data-nimg="1"
+                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+          <div
+            class="animate_top w-1/6"
+            style="opacity: 1; transform: none"
+          ></div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div
+              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
+            >
+              <img
+                alt="Brand"
+                loading="lazy"
+                width="50"
+                height="50"
+                decoding="async"
+                data-nimg="1"
+                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div class="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
+          </div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div
+              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
+            >
+              <img
+                alt="Brand"
+                loading="lazy"
+                width="50"
+                height="50"
+                decoding="async"
+                data-nimg="1"
+                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+          <div
+            class="animate_top w-1/6"
+            style="opacity: 1; transform: none"
+          ></div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div class="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
+          </div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div
+              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
+            >
+              <img
+                alt="Brand"
+                loading="lazy"
+                width="50"
+                height="50"
+                decoding="async"
+                data-nimg="1"
+                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div class="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
+          </div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div
+              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
+            >
+              <img
+                alt="Brand"
+                loading="lazy"
+                width="50"
+                height="50"
+                decoding="async"
+                data-nimg="1"
+                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div class="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
+          </div>
+          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
+            <div
+              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
+            >
+              <img
+                alt="Brand"
+                loading="lazy"
+                width="50"
+                height="50"
+                decoding="async"
+                data-nimg="1"
+                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+      <script>
+        // Lấy tất cả thẻ trong container
+        const tabs = document.querySelectorAll('div[id^="tab"]');
+        const content = document.getElementById("tab-content");
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            tabs.forEach((t) => t.classList.remove("active"));
+
+            tab.classList.add("active");
+            console.log(tab.id);
+            if (tab.id === "tab1") {
+              content.textContent = "Solid UI with Solid Features.";
+            } else if (tab.id === "tab2") {
+              content.textContent =
+                "Pages and UI Components You Need for a SaaS.";
+            } else {
+              content.textContent = "Functional Blog, DB, Auth and Many More";
+            }
+          });
+        });
+      </script>
       <script>
         const navbar = document.getElementById("navbar");
 
