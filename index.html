@@ -10,6 +10,11 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./assests/css/style.css" />
   </head>
   <body>
@@ -337,14 +342,14 @@
 
       <section class="mt-4 px-16">
         <div class="flex flex-col md:flex-row lg:flex-row gap-24">
-          <div class="md:w-1/2">
+          <div class="animationSlideInLeft md:w-1/2">
             <img
               src="https://solid.nextjstemplates.com/_next/image?url=%2Fimages%2Fabout%2Fabout-light-01.png&w=1920&q=75"
               alt=""
             />
           </div>
           <div
-            class="animate_right md:w-1/2 pt-8"
+            class="animationSlideInRight md:w-1/2 pt-8"
             style="opacity: 1; transform: none"
           >
             <h4 class="font-medium uppercase text-black">
@@ -369,10 +374,10 @@
               <div
                 class="flex h-15 w-15 items-center justify-center rounded-[50%] border border-gray-200"
               >
-                <p class="text-metatitle2 font-semibold text-black">01</p>
+                <p class="font-semibold text-black">01</p>
               </div>
               <div class="w-3/4">
-                <h3 class="mb-0.5 text-metatitle2 text-black">
+                <h3 class="mb-0.5 text-black">
                   Mailchimp for Newsletter Emails + SMTP for Transactional
                   Emails
                 </h3>
@@ -385,10 +390,10 @@
               <div
                 class="flex h-15 w-15 items-center justify-center rounded-[50%] border border-gray-200"
               >
-                <p class="text-metatitle2 font-semibold text-black">02</p>
+                <p class="font-semibold text-black">02</p>
               </div>
               <div class="w-3/4">
-                <h3 class="mb-0.5 text-metatitle2 text-black">
+                <h3 class="mb-0.5 text-black">
                   Algolia Integration for Site Search
                 </h3>
                 <p class="text-gray-500">
@@ -403,7 +408,7 @@
       <section class="mt-4 px-12">
         <div class="flex flex-col md:flex-row lg:flex-row gap-24 items-center">
           <div
-            class="md:w-1/2 flex flex-col gap-4 px-8"
+            class="animationSlideInLeft md:w-1/2 flex flex-col gap-4 px-8"
             style="opacity: 1; transform: none"
           >
             <h4 class="font-medium uppercase text-black">
@@ -443,7 +448,7 @@
               </a>
             </div>
           </div>
-          <div class="md:w-1/2">
+          <div class="animationSlideInRight md:w-1/2">
             <img
               src="https://solid.nextjstemplates.com/images/about/about-light-02.svg"
               alt=""
@@ -563,19 +568,15 @@
             <div class="mt-8 flex flex-wrap justify-center gap-24 lg:gap-42.5">
               <div class="text-center">
                 <h3 class="mb-2.5 text-5xl font-bold text-black">500K</h3>
-                <p class="text-lg lg:text-para2">World Wide Clients</p>
+                <p class="text-lg">World Wide Clients</p>
               </div>
-              <div class="text-center" style="opacity: 1; transform: none">
+              <div class="text-center">
                 <h3 class="mb-2.5 text-5xl font-bold text-black">1M+</h3>
-                <p class="text-lg lg:text-para2">Downloads</p>
+                <p class="text-lg">Downloads</p>
               </div>
-              <div class="text-center" style="opacity: 1; transform: none">
-                <h3
-                  class="mb-2.5 text-5xl font-bold text-black xl:text-sectiontitle3"
-                >
-                  865
-                </h3>
-                <p class="text-lg lg:text-para2">Winning Award</p>
+              <div class="text-center">
+                <h3 class="mb-2.5 text-5xl font-bold text-black">865</h3>
+                <p class="text-lg">Winning Award</p>
               </div>
             </div>
           </div>
@@ -583,9 +584,7 @@
       </section>
 
       <section class="py-20 lg:py-25 xl:py-30">
-        <div
-          class="animationDropDown flex flex-col items-center justify-center gap-8"
-        >
+        <div class="flex flex-col items-center justify-center gap-8">
           <p
             class="bg-gray-200 border border-gray-200 font-medium py-3 px-6 rounded-full"
           >
@@ -602,128 +601,464 @@
           </p>
         </div>
         <div
-          class="flex flex-wrap justify-around gap-y-10 mt-12 bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-cover bg-center"
+          class="mt-12 bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-cover bg-center"
         >
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div
-              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
-            >
-              <img
-                alt="Brand"
-                loading="lazy"
-                width="50"
-                height="50"
-                decoding="async"
-                data-nimg="1"
-                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
-                style="color: transparent"
-              />
+          <div class="flex flex-wrap justify-center gap-y-10 w-[70%] mx-auto">
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div
+                class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7"
+              >
+                <img
+                  alt="Brand"
+                  width="50"
+                  height="50"
+                  src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
+                  style="color: transparent"
+                />
+              </div>
             </div>
-          </div>
-          <div
-            class="animate_top w-1/6"
-            style="opacity: 1; transform: none"
-          ></div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div
-              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
-            >
-              <img
-                alt="Brand"
-                loading="lazy"
-                width="50"
-                height="50"
-                decoding="async"
-                data-nimg="1"
-                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
-                style="color: transparent"
-              />
+            <div class="w-1/6" style="opacity: 1; transform: none"></div>
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div
+                class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
+              >
+                <img
+                  alt="Brand"
+                  width="50"
+                  height="50"
+                  src="https://solid.nextjstemplates.com/images/brand/brand-12.svg"
+                  style="color: transparent"
+                />
+              </div>
             </div>
-          </div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div class="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
-          </div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div
-              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
-            >
-              <img
-                alt="Brand"
-                loading="lazy"
-                width="50"
-                height="50"
-                decoding="async"
-                data-nimg="1"
-                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
-                style="color: transparent"
-              />
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div class="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
             </div>
-          </div>
-          <div
-            class="animate_top w-1/6"
-            style="opacity: 1; transform: none"
-          ></div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div class="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
-          </div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div
-              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
-            >
-              <img
-                alt="Brand"
-                loading="lazy"
-                width="50"
-                height="50"
-                decoding="async"
-                data-nimg="1"
-                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
-                style="color: transparent"
-              />
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div
+                class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7"
+              >
+                <img
+                  alt="Brand"
+                  width="50"
+                  height="50"
+                  decoding="async"
+                  data-nimg="1"
+                  src="https://solid.nextjstemplates.com/images/brand/brand-11.svg"
+                  style="color: transparent"
+                />
+              </div>
             </div>
-          </div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div class="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
-          </div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div
-              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
-            >
-              <img
-                alt="Brand"
-                loading="lazy"
-                width="50"
-                height="50"
-                decoding="async"
-                data-nimg="1"
-                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
-                style="color: transparent"
-              />
+            <div class="w-1/6" style="opacity: 1; transform: none"></div>
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div class="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
             </div>
-          </div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div class="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
-          </div>
-          <div class="animate_top w-1/6" style="opacity: 1; transform: none">
-            <div
-              class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark"
-            >
-              <img
-                alt="Brand"
-                loading="lazy"
-                width="50"
-                height="50"
-                decoding="async"
-                data-nimg="1"
-                src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
-                style="color: transparent"
-              />
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div
+                class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7"
+              >
+                <img
+                  alt="Brand"
+                  loading="lazy"
+                  width="50"
+                  height="50"
+                  decoding="async"
+                  data-nimg="1"
+                  src="https://solid.nextjstemplates.com/images/brand/brand-10.svg"
+                  style="color: transparent"
+                />
+              </div>
+            </div>
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div class="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
+            </div>
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div
+                class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7"
+              >
+                <img
+                  alt="Brand"
+                  width="50"
+                  height="50"
+                  src="https://solid.nextjstemplates.com/images/brand/brand-08.svg"
+                  style="color: transparent"
+                />
+              </div>
+            </div>
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div class="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
+            </div>
+            <div class="w-1/6" style="opacity: 1; transform: none">
+              <div
+                class="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7"
+              >
+                <img
+                  alt="Brand"
+                  width="50"
+                  height="50"
+                  src="https://solid.nextjstemplates.com/images/brand/brand-07.svg"
+                  style="color: transparent"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+      <section class="overflow-hidden px-4 py-16">
+        <div class="mx-24 rounded-lg px-7.5 py-12.5 bg-blue-50">
+          <div
+            class="flex flex-wrap gap-8 md:flex-nowrap md:items-center md:justify-between md:gap-0"
+          >
+            <div
+              class="md:w-[70%] lg:w-1/2"
+              style="opacity: 1; transform: none"
+            >
+              <h2 class="mb-4 w-11/12 text-3xl font-bold text-black">
+                Join With Us Today Increase Your Productivity
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                convallis tortor eros. Donec vitae tortor lacus. Phasellus
+                aliquam ante in maximus.
+              </p>
+            </div>
+            <div class="lg:w-[45%]" style="opacity: 1; transform: none">
+              <div class="flex items-center justify-end xl:justify-between">
+                <img
+                  alt="Saly"
+                  width="299"
+                  height="299"
+                  src="./assests/image/shape-06.png"
+                  style="color: transparent"
+                /><a
+                  href="/signup"
+                  class="inline-flex items-center gap-2.5 rounded-full bg-gray-800 px-6 py-3 font-medium text-white hover:opacity-90"
+                  >Sign up free<span class="pl-2.5"
+                    ><svg
+                      class="w-[29px] h-[29px] text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 14H5m14 0-4 4m4-4-4-4"
+                      /></svg></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="overflow-hidden pb-20 lg:pb-25 xl:pb-30 bg-[url('https://solid.nextjstemplates.com/images/shape/shape-dotted-light-02.svg')] bg-cover bg-center"
+      >
+        <div class="px-26">
+          <div class="flex flex-row">
+            <div class="md:w-2/5 lg:w-1/2" style="opacity: 1; transform: none">
+              <span class="font-medium uppercase text-black">OUR FAQS</span>
+              <h2
+                class="relative my-6 text-5xl font-bold text-black xl:text-hero"
+              >
+                Frequently Asked <br />Questions
+              </h2>
+              <div>
+                <a
+                  href="#"
+                  class="group mt-6.5 inline-flex items-center gap-4 text-black hover:text-blue-500"
+                  ><span class="duration-300 group-hover:pr-2">Know More</span>
+                  <svg
+                    class="w-[29px] h-[29px] text-gray-800"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 14H5m14 0-4 4m4-4-4-4"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="md:w-3/5 lg:w-1/2" style="opacity: 1; transform: none">
+              <div class="rounded-lg bg-white shadow-md">
+                <div
+                  class="flex flex-col border-b border-stroke last-of-type:border-none"
+                >
+                  <button
+                    class="flex cursor-pointer items-center justify-between px-6 py-8 font-medium text-black lg:px-9 lg:py-7.5"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur
+                    <svg
+                      class="w-[26px] h-[26px] text-gray-800"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.6"
+                        d="M5 12h14m-7 7V5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="flex flex-col border-b border-stroke last-of-type:border-none"
+                >
+                  <button
+                    class="flex cursor-pointer items-center justify-between px-6 py-8 font-medium text-black lg:px-9 lg:py-7.5"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur
+                    <svg
+                      class="w-[26px] h-[26px] text-gray-800"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.6"
+                        d="M5 12h14m-7 7V5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="flex flex-col border-b border-stroke last-of-type:border-none"
+                >
+                  <button
+                    class="flex cursor-pointer items-center justify-between px-6 py-8 font-medium text-black lg:px-9 lg:py-7.5"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur
+                    <svg
+                      class="w-[26px] h-[26px] text-gray-800"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.6"
+                        d="M5 12h14m-7 7V5"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 lg:py-25 xl:py-30">
+        <div class="flex flex-col items-center justify-center gap-8">
+          <p
+            class="bg-gray-200 border border-gray-200 font-medium py-3 px-6 rounded-full"
+          >
+            TESTIMONIALS
+          </p>
+          <p class="text-5xl font-bold">Client’s Testimonials</p>
+          <p class="text-gray-500 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor eros.<br />
+            Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+          </p>
+        </div>
+        <div
+          class="mx-auto mt-15 max-w-c-1235 px-4 md:px-8 xl:mt-20 xl:px-0"
+          style="opacity: 1; transform: none"
+        >
+          <div class="swiper testimonial-01 mb-20 pb-22.5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide !mr-0">
+                <div class="flex flex-col gap-7.5 lg:flex-row lg:gap-10">
+                  <div
+                    class="rounded-lg bg-white p-9 pt-7.5 shadow-solid-9 sm:w-1/2 lg:w-1/2 xl:w-1/2"
+                  >
+                    <div
+                      class="mb-7.5 flex justify-between border-b border-stroke pb-6"
+                    >
+                      <div>
+                        <h3 class="mb-1.5 text-metatitle3 text-black">
+                          Devid Smith
+                        </h3>
+                        <p>Founter @democompany</p>
+                      </div>
+                      <img
+                        alt="Devid Smith"
+                        loading="lazy"
+                        width="60"
+                        height="50"
+                        decoding="async"
+                        data-nimg="1"
+                        class=""
+                        src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-02.92a59e3e.png&w=128&q=75"
+                        style="color: transparent"
+                      />
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris hendrerit, ligula sit amet cursus tincidunt, lorem
+                      sem elementum nisi, convallis fringilla ante nibh non
+                      urna.
+                    </p>
+                  </div>
+
+                  <div
+                    class="rounded-lg bg-white p-9 pt-7.5 shadow-solid-9 sm:w-1/2 lg:w-1/2 xl:w-1/2"
+                  >
+                    <div
+                      class="mb-7.5 flex justify-between border-b border-stroke pb-6"
+                    >
+                      <div>
+                        <h3 class="mb-1.5 text-metatitle3 text-black">
+                          Jhon Abraham
+                        </h3>
+                        <p>Founter @democompany</p>
+                      </div>
+                      <img
+                        alt="Jhon Abraham"
+                        loading="lazy"
+                        width="60"
+                        height="50"
+                        decoding="async"
+                        data-nimg="1"
+                        class=""
+                        src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-02.92a59e3e.png&w=128&q=75"
+                        style="color: transparent"
+                      />
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris hendrerit, ligula sit amet cursus tincidunt, lorem
+                      sem elementum nisi, convallis fringilla ante nibh non
+                      urna.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide !mr-0">
+                <div class="flex flex-col gap-7.5 lg:flex-row lg:gap-10">
+                  <div
+                    class="rounded-lg bg-white p-9 pt-7.5 shadow-solid-9 sm:w-1/2 lg:w-1/2 xl:w-1/2"
+                  >
+                    <div
+                      class="mb-7.5 flex justify-between border-b border-stroke pb-6"
+                    >
+                      <div>
+                        <h3 class="mb-1.5 text-metatitle3 text-black">
+                          Devid Smith
+                        </h3>
+                        <p>Founter @democompany</p>
+                      </div>
+                      <img
+                        alt="Devid Smith"
+                        loading="lazy"
+                        width="60"
+                        height="50"
+                        decoding="async"
+                        data-nimg="1"
+                        class=""
+                        src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-02.92a59e3e.png&w=128&q=75"
+                        style="color: transparent"
+                      />
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris hendrerit, ligula sit amet cursus tincidunt, lorem
+                      sem elementum nisi, convallis fringilla ante nibh non
+                      urna.
+                    </p>
+                  </div>
+
+                  <div
+                    class="rounded-lg bg-white p-9 pt-7.5 shadow-solid-9 sm:w-1/2 lg:w-1/2 xl:w-1/2"
+                  >
+                    <div
+                      class="mb-7.5 flex justify-between border-b border-stroke pb-6"
+                    >
+                      <div>
+                        <h3 class="mb-1.5 text-metatitle3 text-black">
+                          Jhon Abraham
+                        </h3>
+                        <p>Founter @democompany</p>
+                      </div>
+                      <img
+                        alt="Jhon Abraham"
+                        loading="lazy"
+                        width="60"
+                        height="50"
+                        decoding="async"
+                        data-nimg="1"
+                        class=""
+                        src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-02.92a59e3e.png&w=128&q=75"
+                        style="color: transparent"
+                      />
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Mauris hendrerit, ligula sit amet cursus tincidunt, lorem
+                      sem elementum nisi, convallis fringilla ante nibh non
+                      urna.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Slider main container -->
       <script>
+        var swiper = new Swiper(".swiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
         // Lấy tất cả thẻ trong container
         const tabs = document.querySelectorAll('div[id^="tab"]');
         const content = document.getElementById("tab-content");
@@ -755,6 +1090,8 @@
           }
         });
       </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </div>
   </body>
 </html>
