@@ -57,6 +57,15 @@ body {
     animation: slideInRight 1s ease-out forwards;
 }
 
+.text-sectiontitle {
+    font-size: 14px;
+    line-height: 22px;
+    color: #757693;
+}
+.text-itemtitle2{
+    font: size 24px;
+    line-height: 22px;
+}
 
 @keyframes slideInLeft {
     from {
