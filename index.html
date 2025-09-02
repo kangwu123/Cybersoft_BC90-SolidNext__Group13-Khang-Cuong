@@ -1617,7 +1617,6 @@
                         </svg></button>
                 </form>
             </div>
-
         </div>
       </div>
 
@@ -1661,64 +1660,20 @@
 
    <!-- Back to Top Button -->
   <div class="fixed bottom-6 right-6">
-    <span><a href="#" class="inline-flex items-center justify-center left-4 mr-4 w-10 h-10 text-white bg-blue-600 rounded shadow hover:bg-blue-700 transition">
+    <span><a href="#" class="inline-flex items-center justify-center left-4 mr-4 w-10 h-10 text-white bg-blue-600 rounded shadow hover:bg-blue-700 transition cd-top text-replace js-cd-top opacity-0">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
       </svg>
     </a></span>
   </div>
-
-
-      <!-- Slider main container -->
-      <script>
-        var swiper = new Swiper(".swiper", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-        // Lấy tất cả thẻ trong container
-        const tabs = document.querySelectorAll('div[id^="tab"]');
-        const content = document.getElementById("tab-content");
-        tabs.forEach((tab) => {
-          tab.addEventListener("click", () => {
-            tabs.forEach((t) => t.classList.remove("active"));
-
-            tab.classList.add("active");
-            console.log(tab.id);
-            if (tab.id === "tab1") {
-              content.textContent = "Solid UI with Solid Features.";
-            } else if (tab.id === "tab2") {
-              content.textContent =
-                "Pages and UI Components You Need for a SaaS.";
-            } else {
-              content.textContent = "Functional Blog, DB, Auth and Many More";
-            }
-          });
-        });
-      </script>
-      <script>
-        const navbar = document.getElementById("navbar");
-
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > 0) {
-            navbar.classList.add("border-b", "border-gray-200", "shadow-md");
-          } else {
-            navbar.classList.remove("border-b", "border-gray-200", "shadow-md");
-          }
-        });
-      </script>
-
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Back to Top -->
+      <script src="./js/util.js"></script>
+      <script src="./js/main.js"></script>
+    <!-- Flowbite -->
       <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </div>
   </body>
