@@ -16,130 +16,186 @@
     <link rel="stylesheet" href="./assests/css/style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="sticky w-full top-0 z-50">
       <nav
         id="navbar"
-        class="flex items-center justify-between bg-white border-gray-200 sticky w-full top-0 z-50 py-4 px-4 sm:px-16"
+        class="bg-white border-gray-200 w-full py-4 px-4 sm:px-16"
       >
-        <div class="flex items-center mr-24">
-          <img
-            alt="logo"
-            loading="lazy"
-            width="150"
-            height="50"
-            class="w-36 h-auto"
-            src="https://solid.nextjstemplates.com/images/logo/logo-light.svg"
-            style="color: transparent"
-          />
-        </div>
-
-        <div
-          class="hidden sm:hidden md:hidden lg:flex items-center justify-between w-full gap-5"
-        >
-          <div>
-            <ul class="flex">
-              <li class="inline-block mr-6">
-                <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
-                  >Home</a
-                >
-              </li>
-              <li class="inline-block mr-6">
-                <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
-                  >Features</a
-                >
-              </li>
-              <li class="inline-block mr-6">
-                <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
-                  >Blog</a
-                >
-              </li>
-              <li class="inline-block mr-6">
-                <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
-                  >Docs</a
-                >
-              </li>
-              <li class="inline-block mr-6">
-                <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
-                  >Pages</a
-                >
-              </li>
-              <li class="inline-block mr-6">
-                <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
-                  >Support</a
-                >
-              </li>
-            </ul>
+        <div class="container flex items-center justify-between px-16">
+          <div class="flex items-center mr-24">
+            <img
+              alt="logo"
+              loading="lazy"
+              width="150"
+              height="50"
+              class="w-36 h-auto"
+              src="https://solid.nextjstemplates.com/images/logo/logo-light.svg"
+              style="color: transparent"
+            />
           </div>
-          <div class="flex items-center gap-8">
-            <svg
-              class="w-[30px] h-[30px] text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-width="1.5"
-                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
-              />
-            </svg>
-            <svg
-              class="w-[30px] h-[30px] text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"
-              />
-            </svg>
-            <a
-              class="text-lg hover:text-primary text-gray-400"
-              href="/auth/signin"
-              >Sign In</a
-            >
-            <a
-              class="text-white bg-blue-600 hover:bg-blue-800 rounded-full text-sm px-12 py-4 text-center font-medium"
-              href="/auth/signup"
-              >Sign Up</a
-            >
-          </div>
-        </div>
 
-        <div class="md:hidden">
-          <button
-            id="hamburger-btn"
-            class="text-gray-500 hover:text-blue-600 focus:outline-none"
+          <div
+            class="hidden sm:hidden md:hidden lg:flex items-center justify-between w-full gap-5"
           >
-            <svg
-              class="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <div>
+              <ul class="flex gap-3">
+                <li class="inline-block mr-6">
+                  <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
+                    >Home</a
+                  >
+                </li>
+                <li class="inline-block mr-6">
+                  <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
+                    >Features</a
+                  >
+                </li>
+                <li class="inline-block mr-6">
+                  <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
+                    >Blog</a
+                  >
+                </li>
+                <li class="inline-block mr-6">
+                  <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
+                    >Docs</a
+                  >
+                </li>
+                <li class="group relative">
+                  <button
+                    class="flex cursor-pointer items-center justify-between gap-3 text-lg text-gray-400 hover:text-blue-600"
+                  >
+                    Pages
+                    <svg
+                      class="w-5 h-5 text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m19 9-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="absolute left-0 mt-2 hidden w-60 rounded-md bg-white shadow-lg group-hover:block"
+                  >
+                    <li
+                      class="px-4 py-2 text-lg text-gray-400 hover:text-blue-600"
+                    >
+                      <a href="/blog">Blog Grid</a>
+                    </li>
+                    <li
+                      class="px-4 py-2 text-lg text-gray-400 hover:text-blue-600"
+                    >
+                      <a href="/auth/signin">Sign In</a>
+                    </li>
+                    <li
+                      class="px-4 py-2 text-lg text-gray-400 hover:text-blue-600"
+                    >
+                      <a href="/auth/signup">Sign Up</a>
+                    </li>
+                    <li
+                      class="px-4 py-2 text-lg text-gray-400 hover:text-blue-600"
+                    >
+                      <a href="/docs">Docs</a>
+                    </li>
+                    <li
+                      class="px-4 py-2 text-lg text-gray-400 hover:text-blue-600"
+                    >
+                      <a href="/support">Support</a>
+                    </li>
+                    <li
+                      class="px-4 py-2 text-lg text-gray-400 hover:text-blue-600"
+                    >
+                      <a href="/error">404</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="inline-block mr-6">
+                  <a href="#" class="text-lg text-gray-400 hover:text-blue-600"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center gap-8">
+              <svg
+                class="w-[30px] h-[30px] text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="1.5"
+                  d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <svg
+                class="w-[30px] h-[30px] text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"
+                />
+              </svg>
+              <a
+                class="text-lg hover:text-primary text-gray-400"
+                href="/auth/signin"
+                >Sign In</a
+              >
+              <a
+                class="text-white bg-blue-600 hover:bg-blue-800 rounded-full text-sm px-12 py-4 text-center font-medium"
+                href="/auth/signup"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+
+          <div class="md:hidden">
+            <button
+              id="hamburger-btn"
+              class="text-gray-500 hover:text-blue-600 focus:outline-none"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </nav>
-
+    </div>
+    <div class="container">
       <div
         id="mobile-menu"
         class="hidden md:hidden lg:hidden w-full bg-white border-b border-gray-200 py-4"
@@ -415,7 +471,7 @@
           >
             <h4 class="font-medium uppercase text-black">
               <span
-                class="mb-4 mr-4 inline-flex rounded-full bg-gray-500 px-4.5 py-1 text-gray-400 uppercase"
+                class="mb-4 mr-4 inline-flex rounded-full bg-gray-400 px-4.5 py-1 text-white uppercase"
                 >New</span
               >
               SaaS Boilerplate for Next.js
@@ -794,7 +850,7 @@
                   style="color: transparent"
                 /><a
                   href="/signup"
-                  class="inline-flex items-center rounded-full bg-gray-800 px-2.5 py-3 font-medium text-white hover:opacity-90"
+                  class="inline-flex items-center gap-2.5 rounded-full bg-gray-800 px-6 py-3 font-medium text-white hover:opacity-90"
                   >Sign up free<span class="pl-2.5"
                     ><svg
                       class="w-[29px] h-[29px] text-white"
@@ -1030,7 +1086,7 @@
                 </div>
               </div>
               <div class="swiper-slide !mr-0">
-                <div class="flex flex-col gap-7.5 lg:flex-row lg:gap-10">
+                <div class="flex flex-col gap-7.5 lg:flex-row lg:gap-10 px-16">
                   <div
                     class="rounded-lg bg-white p-9 pt-7.5 shadow-solid-9 w-full lg:w-1/2 xl:w-1/2 shadow-lg"
                   >
@@ -1084,7 +1140,7 @@
                         data-nimg="1"
                         class=""
                         src="https://solid.nextjstemplates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser-02.92a59e3e.png&w=128&q=75"
-                        style="color: transparent"
+                        stylse="color: transparent"
                       />
                     </div>
                     <p class="text-gray-500">
@@ -1287,8 +1343,8 @@
               </div>
               <button
                 aria-label="purchase this plan"
-                class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 text-blue-500 hover:text-blue-500"
-              >
+
+                class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 text-blue-500 hover:text-blue-500">
                 <span class="justify-center duration-300 group-hover/btn:pr-2">
                   Get the Plan</span
                 >
@@ -1403,10 +1459,9 @@
                     <textarea
                       id="message"
                       rows="6"
-                      class="w-21/10 rounded-lg border border-gray-300 bg-white text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-2"
+                      class="block w-full rounded-lg border border-gray-300 bg-white text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 space-x-9"
                       placeholder="Message"
-                    >
-                    </textarea>
+                    ></textarea>
                   </div>
 
                   <div class="flex items-start gap-4 xl:justify-between">
@@ -1716,6 +1771,7 @@
             <div class="mb-4 md:mb-0 font-semibold text-gray-400">
               © 2025 Solid. All rights reserved
             </div>
+
             <div class="flex space-x-4 text-gray-400">
               <span>
                 <a href="#" aria-label="social-link">
