@@ -1,15 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f0f0f0;
+    background: white;
+    box-sizing: border-box;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
     background: white;
-    min-height: 100vh;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .active::after {
@@ -62,7 +62,8 @@ body {
     line-height: 22px;
     color: #757693;
 }
-.text-itemtitle2{
+
+.text-itemtitle2 {
     font: size 24px;
     line-height: 22px;
 }
@@ -71,6 +72,7 @@ body {
     visibility: visible;
     opacity: 1;
 }
+
 @keyframes slideInLeft {
     from {
         opacity: 0;
