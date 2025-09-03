@@ -67,6 +67,10 @@ body {
     line-height: 22px;
 }
 
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
 @keyframes slideInLeft {
     from {
         opacity: 0;
