@@ -796,7 +796,7 @@
                   style="color: transparent"
                 /><a
                   href="/signup"
-                  class="inline-flex items-center gap-2.5 rounded-full bg-gray-800 px-6 py-3 font-medium text-white hover:opacity-90"
+                  class="inline-flex items-center rounded-full bg-gray-800 px-2.5 py-3 font-medium text-white hover:opacity-90"
                   >Sign up free<span class="pl-2.5"
                     ><svg
                       class="w-[29px] h-[29px] text-white"
@@ -1164,13 +1164,15 @@
                   </li>
                 </ul>
               </div>
+
               <button
                 aria-label="purchase this plan"
-                class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300"
+                class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 hover:text-blue-500"
               >
                 <span class="justify-center duration-300 group-hover/btn:pr-2">
-                  Get the Plan</span
-                >
+                  Get the Plan
+                </span>
+
                 <svg
                   width="14"
                   height="14"
@@ -1226,9 +1228,10 @@
                   </li>
                 </ul>
               </div>
+
               <button
                 aria-label="purchase this plan"
-                class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300"
+                class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 hover:text-blue-500"
               >
                 <span class="justify-center duration-300 group-hover/btn:pr-2">
                   Get the Plan</span
@@ -1286,7 +1289,7 @@
               </div>
               <button
                 aria-label="purchase this plan"
-                class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300"
+                class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 hover:text-blue-500"
               >
                 <span class="justify-center duration-300 group-hover/btn:pr-2">
                   Get the Plan</span
@@ -1402,9 +1405,10 @@
                     <textarea
                       id="message"
                       rows="6"
-                      class="block w-full rounded-lg border border-gray-300 bg-white text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 space-x-9"
+                      class="w-21/10 rounded-lg border border-gray-300 bg-white text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-2"
                       placeholder="Message"
-                    ></textarea>
+                    >
+                    </textarea>
                   </div>
 
                   <div class="flex items-start gap-4 xl:justify-between">
@@ -1440,9 +1444,10 @@
                         >
                       </label>
                     </div>
+
                     <button
                       aria-label="send message"
-                      class="inline-flex items-center rounded-full bg-black px-2 py-3 font-medium text-white duration-300 ease-in-out"
+                      class="inline-flex items-center rounded-full bg-black px-6 py-3 mt-4 font-medium text-white duration-300 ease-in-out"
                     >
                       Send Message
                       <svg
@@ -1462,7 +1467,7 @@
                   </div>
                 </form>
               </div>
-
+              <!-- Right Side -->
               <div class="space-y-8 lg:space-y-12">
                 <h2
                   class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 lg:text-4xl"
@@ -1613,24 +1618,27 @@
           </div>
         </div>
       </section>
+
       <!-- Footer -->
       <footer class="bg-white border-t border-gray-300">
         <div class="max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div class="flex items-center space-x-2 mb-4">
-                <a href="index.html" class="relative">
-                  <img
-                    alt="Logo"
-                    loading="lazy"
-                    width="110"
-                    height="80"
-                    decoding="async"
-                    data-nimg="1"
-                    src="https://solid.nextjstemplates.com/images/logo/logo-light.svg"
-                    style="color: transparent"
-                  />
-                </a>
+                <span>
+                  <a href="index.html" class="relative">
+                    <img
+                      alt="Logo"
+                      loading="lazy"
+                      width="110"
+                      height="80"
+                      decoding="async"
+                      data-nimg="1"
+                      src="https://solid.nextjstemplates.com/images/logo/logo-light.svg"
+                      style="color: transparent"
+                    />
+                  </a>
+                </span>
               </div>
               <p class="text-gray-500 text-sm mb-6">
                 Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.
@@ -1699,7 +1707,9 @@
         </div>
 
         <div class="bg-white border-t border-gray-300">
-          <div class="max-w-screen-xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+          <div
+            class="max-w-screen-xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500"
+          >
             <div class="flex space-x-4 mb-4 md:mb-0">
               <a href="#" class="hover:underline">English</a>
               <a href="#" class="hover:underline">Privacy Policy</a>
@@ -1709,7 +1719,7 @@
             <div class="mb-4 md:mb-0 font-semibold text-gray-400">
               © 2025 Solid. All rights reserved
             </div>
-           <div class="flex space-x-4 text-gray-400">
+            <div class="flex space-x-4 text-gray-400">
               <span>
                 <a href="#" aria-label="social-link">
                   <svg
@@ -1727,6 +1737,7 @@
                   </svg>
                 </a>
               </span>
+
               <span>
                 <a href="#" aria-label="social-link">
                   <svg
@@ -1744,6 +1755,7 @@
                   </svg>
                 </a>
               </span>
+
               <span>
                 <a href="#" aria-label="social-link">
                   <svg
@@ -1779,25 +1791,42 @@
             </div>
           </div>
         </div>
-      </footer>    
+      </footer>
 
-   <!-- Back to Top Button -->
-  <div class="fixed bottom-6 right-6">
-    <span><a href="#" class="inline-flex items-center justify-center left-4 mr-4 w-10 h-10 text-white bg-blue-600 rounded shadow hover:bg-blue-700 transition cd-top text-replace js-cd-top opacity-0">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-      </svg>
-    </a></span>
-  </div>
-     
-   <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      <!-- Back to Top Button -->
+      <div class="fixed bottom-6 right-6">
+        <span
+          ><a
+            href="#"
+            class="inline-flex items-center justify-center left-4 mr-4 w-10 h-10 text-white bg-blue-600 rounded shadow hover:bg-blue-700 transition cd-top text-replace js-cd-top opacity-0"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 15l7-7 7 7"
+              />
+            </svg> </a
+        ></span>
+      </div>
+
+      <!-- Jquery -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Back to Top -->
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <!-- Back to Top -->
       <script src="./js/util.js"></script>
       <script src="./js/main.js"></script>
-     <!-- Flowbite -->
+      <!-- Flowbite -->
       <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </div>
   </body>
