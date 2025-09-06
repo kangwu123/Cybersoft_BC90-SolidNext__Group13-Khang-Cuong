@@ -111,3 +111,22 @@ menuToggle.addEventListener(
       menu.classList.add('hidden');
     }
   });
+
+  // FAQ Right side
+function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.icon');
+      const verticalLine = icon.querySelector('.vertical');
+
+      const isOpen = !content.classList.contains('hidden');
+
+      if (isOpen) {
+        // Close
+        content.classList.add('hidden');
+        verticalLine.classList.remove('hidden'); // show vertical line → turn into "+"
+      } else {
+        // Open
+        content.classList.remove('hidden');
+        verticalLine.classList.add('hidden'); // hide vertical line → show "-"
+      }
+}
