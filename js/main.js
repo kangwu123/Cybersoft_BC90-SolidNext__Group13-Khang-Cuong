@@ -43,12 +43,18 @@ window.addEventListener("scroll", () => {
   }
 });
 // Menu Responsive
-const hamburgerBtn = document.getElementById("hamburger-btn");
+const menuToggle  = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
-hamburgerBtn.addEventListener(
+const navLinks = document.getElementById('nav-links');
+const hamburgerIcon = document.getElementById('hamburger');
+const closeIcon = document.getElementById('close');
+menuToggle.addEventListener(
   "click",
   () => {
     mobileMenu.classList.toggle("hidden");
+    navLinks.classList.toggle("show");
+    hamburgerIcon.style.display = hamburgerIcon.style.display === 'none' ? 'block' : 'none';
+    closeIcon.style.display = closeIcon.style.display === 'none' ? 'block' : 'none';
   },
   // Back To Top
   (function () {
