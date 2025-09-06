@@ -258,8 +258,10 @@
             >
           </li>
 
-          <li class="text-center py-2 group relative w-9.5">
+          <li class="text-center py-2 group relative w-9.5"
+            id="dropdownWrapper">
             <button
+              id="dropdownToggle"
               class="flex cursor-pointer items-center justify-between gap-3 text-lg text-gray-600 hover:text-blue-600 block"
             >
               Pages
@@ -282,8 +284,9 @@
               </svg>
             </button>
             <ul
+              id="dropdownMenu"
               class="absolute left-0 mt-2 hidden w-60 rounded-md bg-white shadow-lg group-hover:block"
-            >
+              >
               <li class="px-4 py-2 text-lg text-gray-400 hover:text-blue-600">
                 <a href="#">Blog Grid</a>
               </li>

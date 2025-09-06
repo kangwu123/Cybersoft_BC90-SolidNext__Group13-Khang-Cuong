@@ -95,3 +95,19 @@ menuToggle.addEventListener(
     }
   })()
 );
+
+  // Menu Pages Dropdown Resposive to click not hover
+  const toggleBtn = document.getElementById('dropdownToggle');
+  const menu = document.getElementById('dropdownMenu');
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent bubbling
+    menu.classList.toggle('hidden');
+  });
+
+  // Optional: close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('dropdownWrapper').contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
