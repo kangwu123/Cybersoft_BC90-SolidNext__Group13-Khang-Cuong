@@ -95,3 +95,38 @@ menuToggle.addEventListener(
     }
   })()
 );
+
+  // Menu Pages Dropdown Resposive to click not hover
+  const toggleBtn = document.getElementById('dropdownToggle');
+  const menu = document.getElementById('dropdownMenu');
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent bubbling
+    menu.classList.toggle('hidden');
+  });
+
+  // Optional: close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('dropdownWrapper').contains(e.target)) {
+      menu.classList.add('hidden');
+    }
+  });
+
+  // FAQ Right side
+function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.icon');
+      const verticalLine = icon.querySelector('.vertical');
+
+      const isOpen = !content.classList.contains('hidden');
+
+      if (isOpen) {
+        // Close
+        content.classList.add('hidden');
+        verticalLine.classList.remove('hidden'); // show vertical line → turn into "+"
+      } else {
+        // Open
+        content.classList.remove('hidden');
+        verticalLine.classList.add('hidden'); // hide vertical line → show "-"
+      }
+}
